@@ -1,0 +1,17 @@
+// Realizar una miniespecificación que permita presentar en pantalla 
+// la suma de los números pares; de un rango de números mayores o iguales
+// a 5 y menores o iguales 25
+
+1.  Inicio
+
+2.  limiteInferior, i[0,n] <-- 5
+3.  limiteSuperior, i[0,n] <-- 25
+4.  suma, i[0,n] <-- 0
+5.  Mientras limiteInferior <= limiteSuperior entonces
+6.      Si (limiteInferior MOD 2) == 0 entonces 
+7.          suma <-- suma + limiteInferior
+8.      Fin Si
+9.      limiteInferior <-- limiteInferior + 1
+10.  Fin Mientras
+11.  Escribir "La suma final es: " + suma
+12.  Inicio

@@ -1,0 +1,21 @@
+// Realizar una miniespecificación que permita presentar en pantalla
+// la siguiente secuencia:
+//      1/10
+//      2/20
+//      3/10
+//      4/20
+//      5/10
+//      6/10
+
+1.  Inicio
+
+2.  contador, i[0,n] <-- 1
+3.  Mientras contador <= 6 entonces
+4.      Si (limiteInferior MOD 2) == 0 entonces 
+5.          Escribir <-- contador + "/20"
+6.      De lo contrario
+            Escribir <-- contador + "/10"
+7.      Fin Si
+8.      contador <-- contador + 1
+9.  Fin Mientras
+10.  Inicio
