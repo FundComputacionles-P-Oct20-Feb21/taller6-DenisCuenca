@@ -2,7 +2,7 @@
 
 1. Inicio
 2. nombre, x(50)[{a-z},{A-Z},{BS}]
-3. tipo, x(14)[{a-z}{A-Z},{BS}]
+3. tipo, i[1-n]
 4. costoComputaora, d[0-n]
 5. cadenaFinal, x(200)[{1-9},{a-z},{A-Z}, {/}, {BS}] <-- ""
 6. porcetaje, d[0,n]
@@ -18,12 +18,12 @@
 15.    << "Ingrese el tipo de cliente:"
 16.    >> tipo 
 17.    Dependiendo_De(tipo) haga
-18.      Opcion "Cliente tipo 1"
+18.      Opcion 1
 19.        porcentaje <-- 10
 20.        descuento  <-- (costoComputadora * porcentaje )/100
 21.        totalPagar <-- costoComputadora - descuento 
 22.      Fin
-23.      Opcion "Cliente tipo 2"
+23.      Opcion 2
 24.        porcentaje <-- 20
 25.        descuento  <-- (costoComputadora * porcentaje )/100
 26.        totalPagar <-- costoComputadora - descuento 
