@@ -1,0 +1,39 @@
+
+
+1. Inicio
+2. nombre, x(50)[{a-z},{A-Z},{BS}]
+3. tipo, x(14)[{a-z}{A-Z},{BS}]
+4. costoComputaora, d[0-n]
+5. cadenaFinal, x(200)[{1-9},{a-z},{A-Z}, {/}, {BS}] <-- ""
+6. porcetaje, d[0,n]
+7. descuento, d[0-n]
+8. totalPagar, d[0-n]
+9. contador, i[0-n] <-- 1
+
+10. Mientras contador <= 7 entonces
+11.    << "Ingrese su nombre"
+12.    >> nombre
+13.    << "Ingrese el costo de su computadora" 
+14.    >> costoComputadora
+15.    << "Ingrese el tipo de cliente:"
+16.    >> tipo 
+17.    Dependiendo_De(tipo) haga
+18.      Opcion "Cliente tipo 1"
+19.        porcentaje <-- 10
+20.        descuento  <-- (costoComputadora * porcentaje )/100
+21.        totalPagar <-- costoComputadora - descuento 
+22.      Fin
+23.      Opcion "Cliente tipo 2"
+24.        porcentaje <-- 20
+25.        descuento  <-- (costoComputadora * porcentaje )/100
+26.        totalPagar <-- costoComputadora - descuento 
+27.      Fin
+28.      opcion n   
+29.        totalPagar <-- costoComputadora             
+30.      Fin   
+31.    Fin_Dependiendo_De 
+32. cadenaFinal <-- cadenaFinal + tipo", compra una computadora con precio "+ costoComputadora+" y el costo final a cancelar es $"+ totalPagar"\n" 
+33. contador <-- contador +1
+34. Fin Mientras 
+35. << cadenaFinal
+36. Fin       

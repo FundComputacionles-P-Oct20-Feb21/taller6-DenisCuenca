@@ -1,0 +1,23 @@
+
+
+1. Inicio
+2. nombre, x(50)[{a-z},{A-Z},{BS}]
+3. cadenaFinal, x(200)[{a-z},{A-Z},{1-9},{/},{BS}] <-- ""
+4. promedio, d[0-n]
+5. resultado, x(10)[{a-z},{A-Z}]
+6. contador, i[0-n] <-- 1
+7. Mientras contador <= 4 entonces
+8.    << "Ingrese el nombre del estudiante"
+9.    >> nombre
+10.   << "Ingrese el promedio del estudiante"
+11.   >> promedio
+12.   if promedio > 7 entonces
+13.      resulado <-- "Aprobado" 
+14.   en caso contrario
+15.     resultado <-- "Reprobado" 
+16.   Fin si
+17.   cadenaFinal <-- cadenaFinal + nombre + "\t" + promedio + "\t" + resultado "\n"
+18.   contador <-- contador + 1
+19. Fin mientras 
+20. << cadenaFinal
+21. Fin

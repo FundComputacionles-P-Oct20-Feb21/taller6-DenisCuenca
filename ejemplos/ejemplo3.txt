@@ -1,4 +1,4 @@
-// Realizar una miniespecificación que permita presentar en pantalla
+﻿// Realizar una miniespecificación que permita presentar en pantalla
 // la siguiente secuencia:
 //      1/10
 //      2/20
@@ -12,12 +12,12 @@
 2.  contador, i[0,n] <-- 1
 3.  cadenaFinal, x(200)[{1-9},{a-z},{A-Z}, {/}]
 4.  Mientras contador <= 6 entonces
-5.      Si (limiteInferior MOD 2) == 0 entonces 
-5.          cadenaFinal <-- cadenaFinal + contador + "/20 \n"
-6.      De lo contrario
-            cadenaFinal <-- cadenaFinal + contador + "/10 \n"
-7.      Fin Si
-6.      contador <-- contador + 1
-7.  Fin Mientras
-9.  Escribir cadenaFinal
-9.  Inicio
+5.      Si (contador MOD 2) == 0 entonces 
+6.          cadenaFinal <-- cadenaFinal + contador + "/20 \n"
+7.      De lo contrario
+8.            cadenaFinal <-- cadenaFinal + contador + "/10 \n"
+9.      Fin Si
+10.      contador <-- contador + 1
+11.  Fin Mientras
+12.  Escribir cadenaFinal
+13.  Fin

@@ -1,0 +1,22 @@
+
+
+1. Inicio
+2. contador,i[0-n]<--1
+3. nombre, x(200)[{1-9},{a-z},{A-Z},{/},{BS}] 
+4. cadenaFinal, x(200)[{1-9},{a-z},{A-Z},{/},{BS}] <-- ""
+5. numeroDias, d[0-n]
+6. costoDia, d[0-n]
+7. total, d[0-n]
+8. Mientras contador<= 5 entonces
+9.    << "Ingrese el nombre del empleado"
+10.   >> nombre
+11.   << "Ingrese el número de días trabajados"
+12.   >> numeroDias
+13.   << "Ingrese el costo por dia de trabajo"
+14.   >> costoDia
+15.   total <-- numeroDias * costoDia
+16.   cadenaFinal <-- cadenaFinal + nombre + "\t" + numeroDias + "\t$s" + costoDia + "\t$s" + total "\n"
+17.   contador <-- contador + 1
+18. Fin mientras
+19. << cadenaFinal
+20. Fin

@@ -1,4 +1,4 @@
-// Realizar una miniespecificación que permita pedir por teclado
+﻿// Realizar una miniespecificación que permita pedir por teclado
 // el nombre de 5 empleados.
 // Por cada empleado se debe solicitar el nombre, numero de días trabajados
 // y costo del día trabajo.
@@ -12,18 +12,18 @@
 1.  Inicio
 
 2.  contador, i[0,n] <-- 1
-3.  nombre, x(200)[{1-9},{a-z},{A-Z}, {/}]
+3.  nombre, x(200)[{1-9},{a-z},{A-Z}, {/}, {BS}]
 4.  numeroDias, d[0,n]
-4.  costoDia, d[0,n]
-4.  Mientras contador <= 5 entonces
-5.      Escribir "Ingrese el nombre del empleado"
-6.      Lea nombre
-5.      Escribir "Ingrese el número de días trabajados"
-6.      Lea numeroDias
-5.      Escribir "Ingrese el costo del día trabajado"
-6.      Lea costoDia
-5.      cadenaFinal <-- cadenaFinal + nombre + "\t" + numeroDias + "\t$s" + costoDia + "\n"
-6.      contador <-- contador + 1
-7.  Fin Mientras
-9.  Escribir cadenaFinal
-9.  Inicio
+5.  costoDia, d[0,n]
+6.  Mientras contador <= 5 entonces
+7.      Escribir "Ingrese el nombre del empleado"
+8.      Lea nombre
+9.      Escribir "Ingrese el número de días trabajados"
+10.      Lea numeroDias
+11.      Escribir "Ingrese el costo del día trabajado"
+12.      Lea costoDia
+13.      cadenaFinal <-- cadenaFinal + nombre + "\t" + numeroDias + "\t$s" + costoDia + "\n"
+14.      contador <-- contador + 1
+15.  Fin Mientras
+16.  Escribir cadenaFinal
+17.  Fin
